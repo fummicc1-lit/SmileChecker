@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  SmileBook
-//
-//  Created by Fumiya Tanaka on 2022/06/14.
-//
-
 import UIKit
 
 @main
