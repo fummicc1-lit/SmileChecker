@@ -23,13 +23,7 @@ class ViewController: UIViewController {
             Person.create(name: "Mike"),
             Person.create(name: "Rola")
         ]
-        numberLabel.text = "\(index+1)/8"
-        if people[index].hasSmile == true {
-            smileLabel.text = people[index].name + "は笑っています○"
-        } else {
-            smileLabel.text = people[index].name + "は笑っていません×"
-        }
-        imageView.image = UIImage(named: people[index].name)
+        changed()
     }
 
     @IBAction func next() {
@@ -38,13 +32,7 @@ class ViewController: UIViewController {
         } else {
             index += 1
         }
-        numberLabel.text = "\(index+1)/8"
-        if people[index].hasSmile == true {
-            smileLabel.text = people[index].name + "は笑っています○"
-        } else {
-            smileLabel.text = people[index].name + "は笑っていません×"
-        }
-        imageView.image = UIImage(named: people[index].name)
+        changed()
     }
 
     @IBAction func back() {
@@ -53,13 +41,18 @@ class ViewController: UIViewController {
         } else {
             index -= 1
         }
+        changed()
+    }
+
+    func changed() {
+        let person = people[index]
         numberLabel.text = "\(index+1)/8"
-        if people[index].hasSmile == true {
+        if person.hasSmile == true {
             smileLabel.text = people[index].name + "は笑っています○"
         } else {
             smileLabel.text = people[index].name + "は笑っていません×"
         }
-        imageView.image = UIImage(named: people[index].name)
+        imageView.image = UIImage(named: person.name)
     }
 }
 
