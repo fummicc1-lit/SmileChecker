@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 全部で6つの要素
+        // 全部で8つの要素
         people = [
             Person.create(name: "Allisa"),
             Person.create(name: "Ann"),
