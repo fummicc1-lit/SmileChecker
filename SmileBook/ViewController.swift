@@ -4,7 +4,6 @@ class ViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var smileLabel: UILabel!
-    @IBOutlet var numberLabel: UILabel!
 
     var index: Int = 0
 
@@ -12,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 全部で8つの要素
+        // 全部で8つの要素（人の名前は画像名に一致しているよ）
         people = [
             Person.create(name: "Allisa"),
             Person.create(name: "Ann"),
@@ -23,16 +22,31 @@ class ViewController: UIViewController {
             Person.create(name: "Mike"),
             Person.create(name: "Rola")
         ]
-        changed()
+        // MARK: UIを変更する
+        if people[index].hasSmile == true {
+            smileLabel.text = "\(people[index].name) smiles."
+        } else {
+            smileLabel.text = "\(people[index].name) does not smile."
+        }
+        imageView.image = UIImage(named: people[index].name)
     }
 
     @IBAction func next() {
+        // 一番最後まで来たかチェック
         if index == 7 {
+            // indexを先頭に戻す
             index = 0
         } else {
+            // indexを+1する
             index += 1
         }
-        changed()
+        // MARK: UIを変更する
+        if people[index].hasSmile == true {
+            smileLabel.text = "\(people[index].name) smiles."
+        } else {
+            smileLabel.text = "\(people[index].name) does not smile"
+        }
+        imageView.image = UIImage(named: people[index].name)
     }
 
     @IBAction func back() {
@@ -41,18 +55,13 @@ class ViewController: UIViewController {
         } else {
             index -= 1
         }
-        changed()
-    }
-
-    func changed() {
-        let person = people[index]
-        numberLabel.text = "\(index+1)/8"
-        if person.hasSmile == true {
-            smileLabel.text = people[index].name + "は笑っています○"
+        // MARK: UIを変更する
+        if people[index].hasSmile == true {
+            smileLabel.text = "\(people[index].name) smiles."
         } else {
-            smileLabel.text = people[index].name + "は笑っていません×"
+            smileLabel.text = "\(people[index].name) does not smile."
         }
-        imageView.image = UIImage(named: person.name)
+        imageView.image = UIImage(named: people[index].name)
     }
 }
 

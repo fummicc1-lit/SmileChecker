@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-mc-SzI">
-                                <rect key="frame" x="87" y="171" width="240" height="239"/>
+                                <rect key="frame" x="87" y="140.5" width="240" height="239"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="fWo-6D-4YP"/>
                                     <constraint firstAttribute="width" constant="240" id="k2O-nh-LEc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="笑顔かな？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-Ma-0Av">
-                                <rect key="frame" x="146" y="442.5" width="122" height="29"/>
+                                <rect key="frame" x="146" y="412" width="122" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="MDM-Ma-QWy">
-                                <rect key="frame" x="73" y="511.5" width="268" height="53"/>
+                                <rect key="frame" x="73" y="481" width="268" height="53"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO5-fS-e7Z">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="53"/>
@@ -60,29 +60,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvG-Cb-6mw">
-                                <rect key="frame" x="181.5" y="100" width="51.5" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MDM-Ma-QWy" firstAttribute="top" secondItem="ASA-Ma-0Av" secondAttribute="bottom" constant="40" id="24a-Ad-YAN"/>
                             <constraint firstItem="MDM-Ma-QWy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FMk-9v-vdN"/>
-                            <constraint firstItem="EvG-Cb-6mw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="UDQ-iz-PkI"/>
+                            <constraint firstItem="eXh-mc-SzI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="JPu-Pz-qCm"/>
                             <constraint firstItem="ASA-Ma-0Av" firstAttribute="top" secondItem="eXh-mc-SzI" secondAttribute="bottom" constant="32" id="ZmY-2e-ijD"/>
-                            <constraint firstItem="EvG-Cb-6mw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="daA-fa-ged"/>
                             <constraint firstItem="ASA-Ma-0Av" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hVR-MC-ZnM"/>
-                            <constraint firstItem="eXh-mc-SzI" firstAttribute="top" secondItem="EvG-Cb-6mw" secondAttribute="bottom" constant="32" id="sr6-vQ-VWl"/>
                             <constraint firstItem="eXh-mc-SzI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vws-wQ-fQ3"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="eXh-mc-SzI" id="fsY-Fl-w3a"/>
-                        <outlet property="numberLabel" destination="EvG-Cb-6mw" id="LsS-13-Uwe"/>
                         <outlet property="smileLabel" destination="ASA-Ma-0Av" id="krC-E4-S7e"/>
                     </connections>
                 </viewController>
