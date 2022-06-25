@@ -14,7 +14,6 @@
 		D3671D422858C0BC0066AD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3671D402858C0BC0066AD3E /* Main.storyboard */; };
 		D3671D442858C0BF0066AD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3671D432858C0BF0066AD3E /* Assets.xcassets */; };
 		D3671D472858C0BF0066AD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3671D452858C0BF0066AD3E /* LaunchScreen.storyboard */; };
-		D3671D502858C1940066AD3E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3671D4F2858C1940066AD3E /* Person.swift */; };
 		D3671D522858C2730066AD3E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3671D512858C2730066AD3E /* Utility.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		D3671D432858C0BF0066AD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3671D462858C0BF0066AD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3671D482858C0BF0066AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3671D4F2858C1940066AD3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D3671D512858C2730066AD3E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 				D35F8A452858E0D9008112B7 /* SmileChecker.mlmodel */,
 				D3671D482858C0BF0066AD3E /* Info.plist */,
 				D3671D3A2858C0BC0066AD3E /* AppDelegate.swift */,
-				D3671D4F2858C1940066AD3E /* Person.swift */,
 				D3671D3C2858C0BC0066AD3E /* SceneDelegate.swift */,
 				D3671D512858C2730066AD3E /* Utility.swift */,
 				D3671D3E2858C0BC0066AD3E /* ViewController.swift */,
@@ -151,7 +148,6 @@
 				D35F8A462858E0D9008112B7 /* SmileChecker.mlmodel in Sources */,
 				D3671D3F2858C0BC0066AD3E /* ViewController.swift in Sources */,
 				D3671D3B2858C0BC0066AD3E /* AppDelegate.swift in Sources */,
-				D3671D502858C1940066AD3E /* Person.swift in Sources */,
 				D3671D3D2858C0BC0066AD3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
